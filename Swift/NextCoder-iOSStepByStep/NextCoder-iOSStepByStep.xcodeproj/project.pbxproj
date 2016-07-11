@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A30426291D33774C006A0DA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30426281D33774C006A0DA3 /* AppDelegate.swift */; };
+		A304262B1D33774C006A0DA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304262A1D33774C006A0DA3 /* ViewController.swift */; };
+		A304262E1D33774C006A0DA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A304262C1D33774C006A0DA3 /* Main.storyboard */; };
+		A30426301D33774C006A0DA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A304262F1D33774C006A0DA3 /* Assets.xcassets */; };
+		A30426331D33774C006A0DA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30426311D33774C006A0DA3 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A30426251D33774C006A0DA3 /* NextCoder-iOSStepByStep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NextCoder-iOSStepByStep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30426281D33774C006A0DA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A304262A1D33774C006A0DA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A304262D1D33774C006A0DA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A304262F1D33774C006A0DA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A30426321D33774C006A0DA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A30426341D33774C006A0DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30426221D33774C006A0DA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A304261C1D33774C006A0DA3 = {
+			isa = PBXGroup;
+			children = (
+				A30426271D33774C006A0DA3 /* NextCoder-iOSStepByStep */,
+				A30426261D33774C006A0DA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A30426261D33774C006A0DA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A30426251D33774C006A0DA3 /* NextCoder-iOSStepByStep.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A30426271D33774C006A0DA3 /* NextCoder-iOSStepByStep */ = {
+			isa = PBXGroup;
+			children = (
+				A30426281D33774C006A0DA3 /* AppDelegate.swift */,
+				A304262A1D33774C006A0DA3 /* ViewController.swift */,
+				A304262C1D33774C006A0DA3 /* Main.storyboard */,
+				A304262F1D33774C006A0DA3 /* Assets.xcassets */,
+				A30426311D33774C006A0DA3 /* LaunchScreen.storyboard */,
+				A30426341D33774C006A0DA3 /* Info.plist */,
+			);
+			path = "NextCoder-iOSStepByStep";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A30426241D33774C006A0DA3 /* NextCoder-iOSStepByStep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A30426371D33774C006A0DA3 /* Build configuration list for PBXNativeTarget "NextCoder-iOSStepByStep" */;
+			buildPhases = (
+				A30426211D33774C006A0DA3 /* Sources */,
+				A30426221D33774C006A0DA3 /* Frameworks */,
+				A30426231D33774C006A0DA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NextCoder-iOSStepByStep";
+			productName = "NextCoder-iOSStepByStep";
+			productReference = A30426251D33774C006A0DA3 /* NextCoder-iOSStepByStep.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A304261D1D33774C006A0DA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Next-coder";
+				TargetAttributes = {
+					A30426241D33774C006A0DA3 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A30426201D33774C006A0DA3 /* Build configuration list for PBXProject "NextCoder-iOSStepByStep" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A304261C1D33774C006A0DA3;
+			productRefGroup = A30426261D33774C006A0DA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A30426241D33774C006A0DA3 /* NextCoder-iOSStepByStep */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A30426231D33774C006A0DA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30426331D33774C006A0DA3 /* LaunchScreen.storyboard in Resources */,
+				A30426301D33774C006A0DA3 /* Assets.xcassets in Resources */,
+				A304262E1D33774C006A0DA3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A30426211D33774C006A0DA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A304262B1D33774C006A0DA3 /* ViewController.swift in Sources */,
+				A30426291D33774C006A0DA3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A304262C1D33774C006A0DA3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A304262D1D33774C006A0DA3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A30426311D33774C006A0DA3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A30426321D33774C006A0DA3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A30426351D33774C006A0DA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A30426361D33774C006A0DA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A30426381D33774C006A0DA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "NextCoder-iOSStepByStep/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Next-coder.NextCoder-iOSStepByStep";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A30426391D33774C006A0DA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "NextCoder-iOSStepByStep/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Next-coder.NextCoder-iOSStepByStep";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A30426201D33774C006A0DA3 /* Build configuration list for PBXProject "NextCoder-iOSStepByStep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A30426351D33774C006A0DA3 /* Debug */,
+				A30426361D33774C006A0DA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A30426371D33774C006A0DA3 /* Build configuration list for PBXNativeTarget "NextCoder-iOSStepByStep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A30426381D33774C006A0DA3 /* Debug */,
+				A30426391D33774C006A0DA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A304261D1D33774C006A0DA3 /* Project object */;
+}
