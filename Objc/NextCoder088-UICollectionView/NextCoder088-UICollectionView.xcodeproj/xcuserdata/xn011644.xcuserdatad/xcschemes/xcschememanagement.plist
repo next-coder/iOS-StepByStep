@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>NextCoder-iOSStepByStep.xcscheme</key>
+		<key>NextCoder088-UICollectionView.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>A30426241D33774C006A0DA3</key>
+		<key>A304267E1D337AD6006A0DA3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

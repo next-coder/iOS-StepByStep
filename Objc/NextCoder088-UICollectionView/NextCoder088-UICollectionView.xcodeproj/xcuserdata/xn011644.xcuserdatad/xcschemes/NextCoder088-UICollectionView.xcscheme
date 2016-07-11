@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A30426241D33774C006A0DA3"
-               BuildableName = "NextCoder-iOSStepByStep.app"
-               BlueprintName = "NextCoder-iOSStepByStep"
-               ReferencedContainer = "container:NextCoder-iOSStepByStep.xcodeproj">
+               BlueprintIdentifier = "A304267E1D337AD6006A0DA3"
+               BuildableName = "NextCoder088-UICollectionView.app"
+               BlueprintName = "NextCoder088-UICollectionView"
+               ReferencedContainer = "container:NextCoder088-UICollectionView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A30426241D33774C006A0DA3"
-            BuildableName = "NextCoder-iOSStepByStep.app"
-            BlueprintName = "NextCoder-iOSStepByStep"
-            ReferencedContainer = "container:NextCoder-iOSStepByStep.xcodeproj">
+            BlueprintIdentifier = "A304267E1D337AD6006A0DA3"
+            BuildableName = "NextCoder088-UICollectionView.app"
+            BlueprintName = "NextCoder088-UICollectionView"
+            ReferencedContainer = "container:NextCoder088-UICollectionView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A30426241D33774C006A0DA3"
-            BuildableName = "NextCoder-iOSStepByStep.app"
-            BlueprintName = "NextCoder-iOSStepByStep"
-            ReferencedContainer = "container:NextCoder-iOSStepByStep.xcodeproj">
+            BlueprintIdentifier = "A304267E1D337AD6006A0DA3"
+            BuildableName = "NextCoder088-UICollectionView.app"
+            BlueprintName = "NextCoder088-UICollectionView"
+            ReferencedContainer = "container:NextCoder088-UICollectionView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A30426241D33774C006A0DA3"
-            BuildableName = "NextCoder-iOSStepByStep.app"
-            BlueprintName = "NextCoder-iOSStepByStep"
-            ReferencedContainer = "container:NextCoder-iOSStepByStep.xcodeproj">
+            BlueprintIdentifier = "A304267E1D337AD6006A0DA3"
+            BuildableName = "NextCoder088-UICollectionView.app"
+            BlueprintName = "NextCoder088-UICollectionView"
+            ReferencedContainer = "container:NextCoder088-UICollectionView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
