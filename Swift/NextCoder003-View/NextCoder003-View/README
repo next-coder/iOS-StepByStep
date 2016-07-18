@@ -1,0 +1,6 @@
+UIView学习点：
+    1、视图结构(树状结构)——subviews/superview/window/addSubview/removeFromSuperView
+    2、视图的创建——initWithFrame/initWithCoder/awakeFromNib
+    3、视图手动布局——frame/bounds/center/sizeThatFits/sizeToFit/层级(zPosition)
+    4、视图的基本属性——backgroundColor/userInteractionEnabled/tag/
+    5、常用视图——UIButton/UITextField/UILabel/UIImageView/UIWindow

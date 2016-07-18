@@ -1,0 +1,24 @@
+1、创建新项目介绍(实战一个项目创建，介绍各个选项功能)
+
+2、Xcode新建项目结构
+    1）NextCoder002-iOSBase.xcodeproj主要记录的是，项目的配置信息、文件的目录结构等
+    2）Xcode中Group是文件分组的依据，但是Group不会创建文件夹，所有的文件都在同一个文件夹下
+    3）如果要分文件夹管理，则必须现在Finder中创建，导入到Xcode中即可
+    4）.swift文件都是Swift源代码，默认会创建AppDelegate.swift和ViewController.swift
+    5）.storyboard是UI定义文件，默认会创建Main.storyboard和LaunchScreen.storyboard
+    6）.xcassets是一个资源文件的集合，主要管理AppIcon，启动图以及其他图片数据资源
+    7）.plist是一种结构化的xml文件，Xcode创建Info.plist，主要是程序启动的配置信息
+    8）Products是项目编译后的产品文件列表
+
+
+3、项目配置简写(General和Info.plist中功能)
+
+4、AppDelegate.swift介绍
+
+5、View和ViewController简介
+
+6、AppIcon和App启动图介绍(包含LaunchScreen.storyboard)
+
+7、Xcode基本使用
+
+8、项目实战

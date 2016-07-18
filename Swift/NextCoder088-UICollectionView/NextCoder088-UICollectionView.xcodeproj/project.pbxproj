@@ -12,6 +12,9 @@
 		A304266A1D337A39006A0DA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30426681D337A39006A0DA3 /* Main.storyboard */; };
 		A304266C1D337A39006A0DA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A304266B1D337A39006A0DA3 /* Assets.xcassets */; };
 		A304266F1D337A39006A0DA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A304266D1D337A39006A0DA3 /* LaunchScreen.storyboard */; };
+		A304269E1D3382C0006A0DA3 /* SimpleDemoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304269D1D3382C0006A0DA3 /* SimpleDemoCollectionViewController.swift */; };
+		A30426A11D3393A1006A0DA3 /* PinterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30426A01D3393A1006A0DA3 /* PinterestViewController.swift */; };
+		A3D099681D34BE1100D87CE7 /* CollectionViewPinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D099671D34BE1100D87CE7 /* CollectionViewPinterestLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		A304266B1D337A39006A0DA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A304266E1D337A39006A0DA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A30426701D337A39006A0DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A304269D1D3382C0006A0DA3 /* SimpleDemoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleDemoCollectionViewController.swift; sourceTree = "<group>"; };
+		A30426A01D3393A1006A0DA3 /* PinterestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestViewController.swift; sourceTree = "<group>"; };
+		A3D099671D34BE1100D87CE7 /* CollectionViewPinterestLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewPinterestLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 		A30426631D337A39006A0DA3 /* NextCoder088-UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				A304269F1D33938E006A0DA3 /* Pinterest */,
+				A30426991D338283006A0DA3 /* SimpleDemo */,
 				A30426641D337A39006A0DA3 /* AppDelegate.swift */,
 				A30426661D337A39006A0DA3 /* ViewController.swift */,
 				A30426681D337A39006A0DA3 /* Main.storyboard */,
@@ -62,6 +70,23 @@
 				A30426701D337A39006A0DA3 /* Info.plist */,
 			);
 			path = "NextCoder088-UICollectionView";
+			sourceTree = "<group>";
+		};
+		A30426991D338283006A0DA3 /* SimpleDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A304269D1D3382C0006A0DA3 /* SimpleDemoCollectionViewController.swift */,
+			);
+			path = SimpleDemo;
+			sourceTree = "<group>";
+		};
+		A304269F1D33938E006A0DA3 /* Pinterest */ = {
+			isa = PBXGroup;
+			children = (
+				A30426A01D3393A1006A0DA3 /* PinterestViewController.swift */,
+				A3D099671D34BE1100D87CE7 /* CollectionViewPinterestLayout.swift */,
+			);
+			path = Pinterest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3D099681D34BE1100D87CE7 /* CollectionViewPinterestLayout.swift in Sources */,
 				A30426671D337A39006A0DA3 /* ViewController.swift in Sources */,
+				A30426A11D3393A1006A0DA3 /* PinterestViewController.swift in Sources */,
 				A30426651D337A39006A0DA3 /* AppDelegate.swift in Sources */,
+				A304269E1D3382C0006A0DA3 /* SimpleDemoCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,10 +279,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "NextCoder088-UICollectionView/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Next-coder.NextCoder088-UICollectionView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -262,7 +293,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "NextCoder088-UICollectionView/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Next-coder.NextCoder088-UICollectionView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -288,6 +321,7 @@
 				A30426751D337A39006A0DA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
