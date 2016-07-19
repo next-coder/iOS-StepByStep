@@ -140,7 +140,7 @@ class TestView: UIView, UITextFieldDelegate {
 
         print("initWithFrame:")
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        view.backgroundColor = UIColor.brownColor()
+        view.backgroundColor = UIColor.brown()
         view.tag = 2332;
         self.addSubview(view)
     }
@@ -159,51 +159,51 @@ class TestView: UIView, UITextFieldDelegate {
 
         print("awakeFromNib")
         // self的背景颜色
-        self.backgroundColor = UIColor.greenColor()
+        self.backgroundColor = UIColor.green()
 
         // clipsToBounds true标识当前View及所有的subViews，显示的范围是self.bounds，超出这个范围就不显示。 fase
 //        self.clipsToBounds = true
 
         // 新增子视图
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        view.backgroundColor = UIColor.brownColor()
+        view.backgroundColor = UIColor.brown()
         view.tag = 2332;
         self.addSubview(view)
 
 
         // 添加UIButton
         let button = UIButton(frame: CGRect(x: 100, y: 100, width: 50, height: 50))
-        button.backgroundColor = UIColor.blueColor()
+        button.backgroundColor = UIColor.blue()
         // 设置title
-        button.setTitle("Button", forState: .Normal)
+        button.setTitle("Button", for: UIControlState())
         // 设置icon
-        button.setImage(UIImage(named: ""), forState: .Normal)
+        button.setImage(UIImage(named: ""), for: UIControlState())
         // 设置背景
-        let backgroundImage = UIImage(named: "")?.resizableImageWithCapInsets(UIEdgeInsets(top: 2, left: 2, bottom: 2, right: 2))
+        let backgroundImage = UIImage(named: "")?.resizableImage(withCapInsets: UIEdgeInsets(top: 2, left: 2, bottom: 2, right: 2))
         button.setBackgroundImage(backgroundImage,
-                                  forState: .Normal)
+                                  for: UIControlState())
         // title字体
-        button.titleLabel?.font = UIFont.systemFontOfSize(15)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 15)
         // title颜色
-        button.setTitleColor(UIColor.grayColor(), forState: .Normal)
+        button.setTitleColor(UIColor.gray(), for: UIControlState())
         // 注册事件监听
         button.addTarget(self,
                          action: #selector(buttonTapped),
-                         forControlEvents: .TouchUpInside)
+                         for: .touchUpInside)
         self.addSubview(button)
 
         let textField = UITextField(frame: CGRect(x: 160, y: 60, width: 100, height: 45))
         // 背景图片
-        textField.background = UIImage(named: "")?.resizableImageWithCapInsets(UIEdgeInsets(top: 3, left: 3, bottom: 3, right: 3))
+        textField.background = UIImage(named: "")?.resizableImage(withCapInsets: UIEdgeInsets(top: 3, left: 3, bottom: 3, right: 3))
         // 设置代理，代理的作用是当TextField的信息发生变化是，通知外界，外界可以根据需要做一些响应
         textField.delegate = self
         // placeholder
         textField.placeholder = "This is a text field"
         // 字体和颜色
-        textField.font = UIFont.systemFontOfSize(15)
-        textField.textColor = UIColor.darkGrayColor()
+        textField.font = UIFont.systemFont(ofSize: 15)
+        textField.textColor = UIColor.darkGray()
         // 文本布局
-        textField.textAlignment = .Center
+        textField.textAlignment = .center
         self.addSubview(textField)
     }
 
@@ -222,7 +222,7 @@ class TestView: UIView, UITextFieldDelegate {
 
     }
 
-    @objc func buttonTapped(sender: UIButton) {
+    @objc func buttonTapped(_ sender: UIButton) {
 
         print("buttonTapped \(sender)")
     }

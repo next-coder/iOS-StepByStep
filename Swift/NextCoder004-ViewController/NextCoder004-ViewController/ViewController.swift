@@ -30,7 +30,7 @@ import UIKit
 class ViewController: UIViewController {
 
     // 初始化
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
 
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
@@ -61,7 +61,7 @@ class ViewController: UIViewController {
         // 可以在此方法中实现更多配置，比如UITableView的delegate, dataSource，子视图的布局等等
     }
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         // 视图即将显示的时候调用(调用时，视图还未显示)
@@ -69,21 +69,21 @@ class ViewController: UIViewController {
         // 可以实现每次显示都需要更新视图或数据
     }
 
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
         // 视图完成显示时调用(调用时，视图已经显示)
         // 此方法在每次视图显示的时候都会调用
     }
 
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
 
         // 视图即将从屏幕上消失时调用(调用时，视图还未消失)
         // 此方法在每次视图消失的时候都会调用
     }
 
-    override func viewDidDisappear(animated: Bool) {
+    override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
 
         // 视图即将从屏幕上消失时调用(调用时，视图已经消失)

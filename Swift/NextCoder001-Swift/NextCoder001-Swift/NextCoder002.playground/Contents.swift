@@ -5,7 +5,7 @@ import UIKit
 
 // 函数和闭包
 // 函数使用func关键字声明，使用->标识返回值类型
-func greet(person person: String, day: String) -> String {
+func greet(person: String, day: String) -> String {
 
     var person1 = person
     person1 = "ewew"
