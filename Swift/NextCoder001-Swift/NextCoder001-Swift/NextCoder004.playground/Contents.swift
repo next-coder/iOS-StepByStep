@@ -7,7 +7,7 @@ var str = "Hello, playground"
 
 // 异常处理
 // 所有的异常都需要实现ErrorProtocol协议，实现ErrorProtocol协议的类型，都可以作为异常
-enum PrinterError: ErrorType {
+enum PrinterError: ErrorProtocol {
 
     case outOfPaper
     case noToner
@@ -15,7 +15,7 @@ enum PrinterError: ErrorType {
 }
 
 // 用throw抛异常，用throws表示函数或方法可能抛出异常
-func send(job: Int, toPrinter printerName: String) throws -> String {
+func send(_ job: Int, toPrinter printerName: String) throws -> String {
 
     if printerName == "Never Has Toner" {
 
@@ -59,7 +59,7 @@ print(printerFailer)
 
 // 使用defer实现一些代码，不管是否抛出异常，都可以执行，类似于java异常中的finally
 
-func fridgeContaisn(food: String) -> Bool {
+func fridgeContaisn(_ food: String) -> Bool {
 
     var open = true
 
@@ -110,7 +110,7 @@ func makeArray<Item>(repeating item: Item, numberOfTimes: Int) -> [Item] {
 let result = makeArray(repeating: "Knock", numberOfTimes: 4)
 
 
-class Array1<T, V where T: SequenceType, V: SequenceType, T.Generator.Element == V.Generator.Element> {
+class Array1<T, V where T: Sequence, V: Sequence, T.Iterator.Element == V.Iterator.Element> {
 
     var array = [T]()
 
@@ -121,11 +121,11 @@ class Array1<T, V where T: SequenceType, V: SequenceType, T.Generator.Element ==
 
     func removeAtIndex(index: Int) -> T {
 
-        return array.removeAtIndex(index)
+        return array.remove(at: index)
     }
 }
 
-class Array2<T: SequenceType, V: SequenceType where T.Generator.Element == V.Generator.Element> {
+class Array2<T: Sequence, V: Sequence where T.Iterator.Element == V.Iterator.Element> {
 
     var array = [T]()
 
@@ -136,7 +136,7 @@ class Array2<T: SequenceType, V: SequenceType where T.Generator.Element == V.Gen
 
     func removeAtIndex(index: Int) -> T {
 
-        return array.removeAtIndex(index)
+        return array.remove(at: index)
     }
 }
 

@@ -16,12 +16,12 @@ if Int.max == 23233 {
 
 array?.append("22222")
 
-let element = array?.removeAtIndex(0)
+let element = array?.remove(at: 0)
 print(element)
 
 array?.append("fdfdfdfd")
 
-let compareResult = array?.removeAtIndex(0).compare("fdfdf")
+let compareResult = array?.remove(at: 0).compare("fdfdf")
 print(compareResult)
 
 
@@ -30,11 +30,11 @@ print(compareResult)
 // iPhone5及以前的设备是32位，iPhone5s及之后的设备为64位
 print(Int.max)
 print(Int.min)
-print(sizeof(Int))
+print(sizeof(Int.self))
 
 print(UInt.max)
 print(UInt.min)
-print(sizeof(UInt))
+print(sizeof(UInt.self))
 
 // 整型数据还有以下类型，所有的以下类型，还有对应的Usigned类型
 // 比如UInt8 UInt16等
@@ -42,28 +42,28 @@ print(sizeof(UInt))
 print("Int8 : ")
 print(Int8.max)
 print(Int8.min)
-print(sizeof(Int8))
+print(sizeof(Int8.self))
 
 print("Int16 : ")
 print(Int16.max)
 print(Int16.min)
-print(sizeof(Int16))
+print(sizeof(Int16.self))
 
 print("Int32 : ")
 print(Int32.max)
 print(Int32.min)
-print(sizeof(Int32))
+print(sizeof(Int32.self))
 
 print("Int64 : ")
 print(Int64.max)
 print(Int64.min)
-print(sizeof(Int64))
+print(sizeof(Int64.self))
 
 
 // 浮点型数据
 // Double是8个字节，Float是4个字节
-print(sizeof(Double))
-print(sizeof(Float))
+print(sizeof(Double.self))
+print(sizeof(Float.self))
 
 //// 数值不能溢出
 //let int8: Int8 = Int8.max + 1
@@ -374,7 +374,7 @@ extension Int: ExampleProtocol {
 }
 
 var intNumber = 5
-intNumber.add(10)
+intNumber.add(number: 10)
 
 
 

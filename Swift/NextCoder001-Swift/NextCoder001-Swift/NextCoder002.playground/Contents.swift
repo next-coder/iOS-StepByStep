@@ -5,14 +5,14 @@ import UIKit
 
 // 函数和闭包
 // 函数使用func关键字声明，使用->标识返回值类型
-func greet(person: String, day: String) -> String {
+func greet(person person: String, day: String) -> String {
 
     var person1 = person
     person1 = "ewew"
     return "Hello \(person), today is \(day)."
 }
 
-greet("Bob", day: "Tuesday")
+greet(person: "Bob", day: "Tuesday")
 
 // 函数参数中通常会包含label，对参数作用进行说明
 // 参数label是函数名的一部分，调用函数的时候必须包含
@@ -25,14 +25,14 @@ func greet(person: String, on day: String) -> String {
     return "Hello \(person), today is \(day)."
 }
 
-greet("Bob", on: "Tuesday")
+greet(person: "Bob", on: "Tuesday")
 
 func greet(person: String, _ day: String) -> String {
 
     return "Hello \(person), today is \(day)."
 }
 
-greet("Bob", "Tuesday")
+greet(person: "Bob", "Tuesday")
 
 
 // 函数也可以接收可变参数，接收形式为数组
@@ -42,7 +42,7 @@ func sumOf(numbers: Int...) {
 }
 
 //sumOf()
-sumOf(12, 23, 32, 43)
+sumOf(numbers: 12, 23, 32, 43)
 
 
 // 闭包(closure)就是指一段定义之后，可以随时调用的代码
@@ -131,7 +131,7 @@ closure5(22, 22)
 // 闭包可以访问外部变量
 // 闭包能够在函数和对象之间相互传递
 // 闭包的实现能够嵌入到逻辑中，易于写出容易理解的代码
-func closureTest1(param: Int, closure4: ((Int, Int) -> Int)) {
+func closureTest1(_ param: Int, closure4: ((Int, Int) -> Int)) {
 
     print(closure4(10, 10))
 }
@@ -173,8 +173,8 @@ closureTest1(10) {
 }
 
 // 闭包的实际使用场景
-let array = [["a": 23, "b": 323], ["a": 23], ["a": 23], ["a": 23], ["a": 2123], ["a": 2321], ["a": 23]]
-let array1 = array.sort {
+var array = [["a": 23, "b": 323], ["a": 23], ["a": 23], ["a": 23], ["a": 2123], ["a": 2321], ["a": 23]]
+array.sort {
 
     (param1: [String: Int], param2: [String: Int]) -> Bool in
 
@@ -184,6 +184,19 @@ let array1 = array.sort {
     }
     return param1["a"] < param2["a"]
 
+}
+
+array
+
+let array1 = array.sorted {
+
+    (param1: [String: Int], param2: [String: Int]) -> Bool in
+
+    if (param1["a"] == param2["a"]) {
+
+        return param1["b"] < param2["b"]
+    }
+    return param1["a"] < param2["a"]
 }
 
 
@@ -325,7 +338,7 @@ if let serverResponseCodeValue = serverResponseCode {
     print("serverResponseCode is nil")
 }
 
-if let firstNumber = Int("4"), secondNumber = Int("23") where firstNumber < 2 {
+if let firstNumber = Int("4"), let secondNumber = Int("23") , firstNumber < 2 {
 
     print("\(firstNumber) < \(secondNumber)")
 } else {
