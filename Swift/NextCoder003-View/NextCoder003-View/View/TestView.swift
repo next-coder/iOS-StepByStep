@@ -181,20 +181,27 @@ class TestView: UIView, UITextFieldDelegate {
         // 设置背景
         let backgroundImage = UIImage(named: "")?.resizableImage(withCapInsets: UIEdgeInsets(top: 2, left: 2, bottom: 2, right: 2))
         button.setBackgroundImage(backgroundImage,
-                                  for: UIControlState())
+                                  for: .normal)
         // title字体
         button.titleLabel?.font = UIFont.systemFont(ofSize: 15)
         // title颜色
-        button.setTitleColor(UIColor.gray(), for: UIControlState())
+        button.setTitleColor(UIColor.gray(),
+                             for: .normal)
         // 注册事件监听
         button.addTarget(self,
-                         action: #selector(buttonTapped),
+                         action: #selector(buttonTapped(sender:)),
                          for: .touchUpInside)
         self.addSubview(button)
 
-        let textField = UITextField(frame: CGRect(x: 160, y: 60, width: 100, height: 45))
+        let textField = UITextField(frame: CGRect(x: 160,
+                                                  y: 60,
+                                                  width: 100,
+                                                  height: 45))
         // 背景图片
-        textField.background = UIImage(named: "")?.resizableImage(withCapInsets: UIEdgeInsets(top: 3, left: 3, bottom: 3, right: 3))
+        textField.background = UIImage(named: "")?.resizableImage(withCapInsets: UIEdgeInsets(top: 3,
+                                                                                              left: 3,
+                                                                                              bottom: 3,
+                                                                                              right: 3))
         // 设置代理，代理的作用是当TextField的信息发生变化是，通知外界，外界可以根据需要做一些响应
         textField.delegate = self
         // placeholder
@@ -222,7 +229,7 @@ class TestView: UIView, UITextFieldDelegate {
 
     }
 
-    @objc func buttonTapped(_ sender: UIButton) {
+    @objc func buttonTapped(sender: UIButton) {
 
         print("buttonTapped \(sender)")
     }

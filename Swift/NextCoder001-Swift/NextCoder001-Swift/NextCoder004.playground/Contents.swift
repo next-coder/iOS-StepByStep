@@ -144,6 +144,14 @@ class Array2<T: Sequence, V: Sequence where T.Iterator.Element == V.Iterator.Ele
 
 
 
+let yearRate = 0.2
+let finalMultiply = 2.0
+
+pow(1 + yearRate, 30)
+
+
+
+
 
 
 
